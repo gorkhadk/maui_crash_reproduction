@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiCrashTest.Src.Views.TestView"
+			 BackgroundColor=" Black"
+			 >
+	<Grid WidthRequest="801" HeightRequest="600" >
+		<Frame BackgroundColor="#999">
+			<Grid x:Name="PageContentGrid" ColumnDefinitions="2*,1,6*" RowDefinitions="*">
+				<ScrollView Grid.Column="0" x:Name="ScrollCategory" VerticalOptions="Fill" HorizontalOptions="Fill" Grid.Row="0" Margin="10,5,20,50" VerticalScrollBarVisibility="Never">
+					<VerticalStackLayout x:Name="CategoryCategories"/>
+				</ScrollView>
+				<VerticalStackLayout x:Name="PageFooter" Grid.Column="0" Grid.Row="1" Margin="20,0,20,20" VerticalOptions="End"/>
+				<Label  Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" BackgroundColor="White" VerticalOptions="Fill" Text="..."/>
+				<ScrollView Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Margin="15,0,5,0" >
+					<Grid x:Name="CategoryButtonsGrid" ColumnDefinitions="130,130,130,130" RowDefinitions="120,120,120,120,120">
+						<Frame Grid.Row="0" Grid.Column="0" CornerRadius="4" BackgroundColor="Bisque" Padding="10,10,10,0" Margin="5" HorizontalOptions="Fill">
+							<Grid RowDefinitions="*,18">
+								<Label Grid.Row="0"  Grid.Column="0" Text="BERLIN Gästestuhl, gelb" TextColor="Black" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" LineBreakMode="WordWrap" FontAttributes="None"/>
+							</Grid>
+						</Frame>
+						<Frame Grid.Row="0" Grid.Column="1" CornerRadius="4" BackgroundColor="Bisque" Padding="10,10,10,0" Margin="5" HorizontalOptions="Fill">
+							<Grid  RowDefinitions="*,18">
+								<Label Grid.Row="0"  Grid.Column="0" Text="LONDON Schreibtischstuhl, blau" TextColor="Black" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" LineBreakMode="WordWrap" FontAttributes="None"/>
+							</Grid>
+						</Frame>
+						<Frame Grid.Row="0" Grid.Column="2" CornerRadius="4" BackgroundColor="Bisque" Padding="10,10,10,0" Margin="5" HorizontalOptions="Fill">
+							<Grid  RowDefinitions="*,18">
+								<Label Grid.Row="0"  Grid.Column="0" Text="MEXICO Bürostuhl, schwarz" TextColor="Black" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" LineBreakMode="WordWrap" FontAttributes="None"/>
+							</Grid>
+						</Frame>
+						<Frame Grid.Row="0" Grid.Column="3" CornerRadius="4" BackgroundColor="Bisque" Padding="10,10,10,0" Margin="5" HorizontalOptions="Fill">
+							<Grid  RowDefinitions="*,18">
+								<Label Grid.Row="0"  Grid.Column="0" Text="MOSCOW Schreibtischstuhl, rot" TextColor="Black" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" LineBreakMode="WordWrap" FontAttributes="None"/>
+							</Grid>
+						</Frame>
+						<Frame Grid.Row="1" Grid.Column="0" CornerRadius="4" BackgroundColor="Bisque" Padding="10,10,10,0" Margin="5" HorizontalOptions="Fill">
+							<Grid  RowDefinitions="*,18">
+								<Label Grid.Row="0"  Grid.Column="0" Text="MUNICH Schreibtischstuhl, gelb" TextColor="Black" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" LineBreakMode="WordWrap" FontAttributes="None"/>
+							</Grid>
+						</Frame>
+						<Frame Grid.Row="1" Grid.Column="1" CornerRadius="4" BackgroundColor="Bisque" Padding="10,10,10,0" Margin="5" HorizontalOptions="Fill">
+							<Grid  RowDefinitions="*,18">
+								<Label Grid.Row="0"  Grid.Column="0" Text="PARIS Gästestuhl, schwarz" TextColor="Black" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" LineBreakMode="WordWrap" FontAttributes="None"/>
+							</Grid>
+						</Frame>
+						<Frame Grid.Row="1" Grid.Column="2" CornerRadius="4" BackgroundColor="Bisque" Padding="10,10,10,0" Margin="5" HorizontalOptions="Fill">
+							<Grid  RowDefinitions="*,18">
+								<Label Grid.Row="0"  Grid.Column="0" Text="ROME Gästestuhl, grün" TextColor="Black" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" LineBreakMode="WordWrap" FontAttributes="None"/>
+							</Grid>
+						</Frame>
+						<Frame Grid.Row="1" Grid.Column="3" CornerRadius="4" BackgroundColor="Bisque" Padding="10,10,10,0" Margin="5" HorizontalOptions="Fill">
+							<Grid  RowDefinitions="*,18">
+								<Label Grid.Row="0"  Grid.Column="0" Text="SEOUL Gästestuhl, rot" TextColor="Black" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" LineBreakMode="WordWrap" FontAttributes="None"/>
+							</Grid>
+						</Frame>
+						<Frame Grid.Row="2" Grid.Column="0" CornerRadius="4" BackgroundColor="Bisque" Padding="10,10,10,0" Margin="5" HorizontalOptions="Fill">
+							<Grid  RowDefinitions="*,18">
+								<Label Grid.Row="0"  Grid.Column="0" Text="SYDNEY Schreibtischstuhl, grün" TextColor="Black" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" LineBreakMode="WordWrap" FontAttributes="None"/>
+							</Grid>
+						</Frame>
+						<Frame Grid.Row="2" Grid.Column="1" CornerRadius="4" BackgroundColor="Bisque" Padding="10,10,10,0" Margin="5" HorizontalOptions="Fill">
+							<Grid  RowDefinitions="*,18">
+								<Label Grid.Row="0"  Grid.Column="0" Text="TOKYO Gästestuhl, blau" TextColor="Black" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center" LineBreakMode="WordWrap" FontAttributes="None"/>
+							</Grid>
+						</Frame>
+					</Grid>
+				</ScrollView>
+			</Grid>
+		</Frame>
+	</Grid>
+</ContentPage>
